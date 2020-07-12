@@ -50,6 +50,24 @@
         </form>
     </div>
 
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAjCkSffUPcq75gTXu-1DGPPlCKb2XrAvk",
+            authDomain: "live-chat-acf07.firebaseapp.com",
+            databaseURL: "https://live-chat-acf07.firebaseio.com",
+            projectId: "live-chat-acf07",
+            storageBucket: "live-chat-acf07.appspot.com",
+            messagingSenderId: "138373420505",
+            appId: "1:138373420505:web:28e37e26c963fcb57c75c8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
     <script src="scripts/app.js"></script>
